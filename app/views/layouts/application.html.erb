@@ -1,18 +1,31 @@
 <!DOCTYPE html>
-<html>
-  <head>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>BlueCircle</title>
-    <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-
-  <body>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>BlueCircle</title>
+		<%= csrf_meta_tags %>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+		<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+		<link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/LACMTA_Circle_Blue_Line.svg/2000px-LACMTA_Circle_Blue_Line.svg.png">
+	</head>
+	<body>
+		<div class="row">
+			<div class="col-12 nav">
+				<nav class="container" id="navbar">
+					<ul>
+						<li class="nav-li"><a href="#about" class="smoothScroll">About</a></li>
+						<li class="nav-li"><a href="#">Circles</a></li>
+						<li class="nav-li"><a href="#sponsors" class="smoothScroll">Sponsors</a></li>
+						<li class="nav-li"><a href="#gallery" class="smoothScroll">Gallery</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
-    <%= yield %>
-  </body>
+		<%= yield %>
+	</body>
 </html>
+>>>>>>> master
