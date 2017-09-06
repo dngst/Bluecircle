@@ -5,8 +5,8 @@ class CreateChild < ActiveRecord::Migration[5.1]
       t.column :age,  :integer
       t.column :home, :string
       t.column :school, :string
-      t.column :aspirations, :text_area
-      t.column :siblings, :text_area
+      t.column :aspirations, :text
+      t.column :siblings, :string
 
 
       t.timestamps
