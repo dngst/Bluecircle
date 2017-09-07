@@ -1,27 +1,17 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Circles</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @circles.each do |circle| %>
-      <tr>
-        <td><%= circle.name %></td>
-        <td><%= link_to 'Show', circle %></td>
-        <td><%= link_to 'Edit', edit_circle_path(circle) %></td>
-        <td><%= link_to 'Destroy', circle, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Circle', new_circle_path %>
+<div class="circles-index">
+  <div class="container">
+    <h1>CIRCLES</h1>
+  </div>
+</div>
+<div class="container circles-container">
+  <p id="notice"><%= notice %></p>
+  <h1 class="center padding-top-10 padding-bottom-10">Circles</h1>
+  <div class="row">
+  <% @circles.each do |circle| %>
+    <div class="col-md-4 ">
+      <img src="<%= circle.image %>" alt="..." class="rounded-circle slideanim">
+      <p class="center"><%= circle.name %></p>
+    </div><br>
+  <% end %>
+  </div>
+</div>

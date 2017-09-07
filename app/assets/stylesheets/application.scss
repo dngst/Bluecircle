@@ -1,18 +1,18 @@
 @import "bootstrap";
-.stylish-form 
+.stylish-form
     {
-      background-image:url('https://lut.im/cOs9CbKe42/DT8DT06CeJkRsyWC.jpg'); 
+      background-image:url('https://lut.im/cOs9CbKe42/DT8DT06CeJkRsyWC.jpg');
       padding:10px;
     }
     .stylish-form h2 {
       color: #00BFFF;
       margin-top:50px;
-      
+
     }
     .font_white {
       color:#fff !important;
     }
-    .mar20 
+    .mar20
     {
       margin:20px;
     }
@@ -232,3 +232,63 @@ nav {
   padding: 10%;
 }
 
+/************/
+/* circles */
+/************/
+
+.circles-index {
+    background:  linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(https://static.pexels.com/photos/139321/pexels-photo-139321.jpeg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 85%;
+
+  h1 {
+    color: white;
+    text-align: center;
+    padding-top: 22%;
+    font-family: 'Playfair Display', serif;
+    font-size: 80px;
+    letter-spacing: 5px;
+  }
+}
+
+/************/
+/* helpers */
+/************/
+.left-align {
+  text-align: left;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.center, .center-align {
+  text-align: center;
+}
+
+.left {
+  float: left !important;
+}
+
+.right {
+  float: right !important;
+}
+
+.padding-top-10 {
+  padding-top: 10%;
+}
+
+.padding-bottom-10 {
+  padding-bottom: 10%;
+}
+
+.circles-container {
+  text-align: center;
+  img {
+    width: 200px;;
+    height: 200px;
+  }
+}
