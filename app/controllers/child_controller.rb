@@ -8,4 +8,10 @@ class ChildrenController < ApplicationController
       @child = Child.find(params[:id])
       render :show
     end
+
+    def new
+      @child = Child.new
+      render :new
+    end
+    
   end
