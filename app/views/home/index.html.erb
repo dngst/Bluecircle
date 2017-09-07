@@ -5,6 +5,17 @@
 			<p>
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		</div>
+			<div>
+				<h1>Children</h1>
+
+				<ul>
+					<% @children.each do |child| %>
+					<li><% link_to child.name, child_path(child) %></li>
+					<% end %>
+				</ul>
+
+				</div>
+
 	</div>
 </div>
 <div id="startchange">
