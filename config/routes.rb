@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :circles
   devise_for :users
   resources :children
   get 'home/index'
