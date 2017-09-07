@@ -5,7 +5,8 @@
 			<p>
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		</div>
-			<div>
+
+			<div class="child">
 				<h1>Children</h1>
 
 				<ul>
@@ -13,6 +14,9 @@
 					<li><% link_to child.name, child_path(child) %></li>
 					<% end %>
 				</ul>
+				<hr>
+
+				<% link_to "New Child", new_child_path %>
 
 				</div>
 

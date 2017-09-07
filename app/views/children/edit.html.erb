@@ -1,0 +1,32 @@
+<h1>Edit Child</h1>
+
+<% if @child.errors.any? %>
+  <h3>Please fix these errors:</h3>
+    <ul>
+
+      <% @child.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+      <% end %>
+    </ul>
+    <% end %>
+
+    <%= form_for @child do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+
+    <%= f.label :age %>
+    <%= f.number_field :age %>
+
+    <%= f.label :home %>
+    <%= f.text_field :home %>
+
+    <%= f.label :school %>
+    <%= f.text_field :school %>
+
+    <%= f.label :aspirations %>
+    <%= f.text_field :aspirations %>
+
+    <%= f.label :siblings %>
+    <%= f.number_field :siblings %>
+
+    <% end %>
