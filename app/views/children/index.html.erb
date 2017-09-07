@@ -1,0 +1,12 @@
+
+
+  <h1>Children</h1>
+
+  <ul>
+    <% @children.each do |child| %>
+    <li><% link_to child.name, child_path(child) %></li>
+    <% end %>
+  </ul>
+  <hr>
+
+  <%= link_to "New Child", new_child_path %>

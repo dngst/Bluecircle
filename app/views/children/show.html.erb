@@ -1,3 +1,26 @@
 <h1><%= @child.name %></h1>
 
-<p><%= link_to "Return to Children", children_path %></p>
+  <% if @child.users.any? %>
+    <h4>Here are the users for this child:</h4>
+
+    <ul>
+      <% @child.users.each do |user| %>
+        <li>
+          <%= user.description %> |
+          <%= link_to "Edit", edit_child_user_path(@child, user) %> |
+          <%= link_to "Delete", child_user_path(@child, user),
+                                   :data => {:confirm => "Are you sure?",
+                                                  :method => "delete"} %>
+        </li>
+      <% end %>
+    </ul>
+  <% else %>
+    <p>There are no users yet!</p>
+  <% end %>
+
+  <p><%= link_to "Add a user", new_child_user_path(@child) %></p>
+  <p><%= link_to "Delete List", child_path(@child),
+                          :data => {:confirm => "Are you sure?",
+                                         :method => "delete"} %></p>
+
+  <p><%= link_to "Return to Children", children_path %></p>

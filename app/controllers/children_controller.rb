@@ -36,10 +36,17 @@ class ChildrenController < ApplicationController
       render :edit
     end
   end
-  
+
+  def destroy
+    @child = Child.find(params[:id])
+    @child.destroy
+    redirect_to children_path
+  end
+
+
   private
   def child_params
     params.require(:child).permit(:name, :age, :home, :school, :aspirations, :siblings)
   end
 
-  end
+end
