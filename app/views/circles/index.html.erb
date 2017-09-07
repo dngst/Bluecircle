@@ -10,8 +10,8 @@
   <% @circles.each do |circle| %>
     <div class="col-md-4 ">
       <img src="<%= circle.image %>" alt="..." class="rounded-circle slideanim">
-      <p class="center"><%= circle.name %></p>
-    </div><br>
+      <p class="center"><%= link_to circle.name, circle %></p>
+    </div>
   <% end %>
   </div>
 </div>
