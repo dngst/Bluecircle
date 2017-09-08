@@ -355,3 +355,64 @@ nav {
     height: 200px;
   }
 }
+
+nav {
+  color: #fff;
+  background-color: white;
+  width: 100%;
+  height: 56px;
+  line-height: 56px;
+}
+
+nav .nav-wrapper {
+  position: relative;
+  height: 100%;
+}
+
+.navbar-fixed {
+  position: relative;
+  height: 56px;
+  z-index: 997;
+}
+
+.navbar-fixed nav {
+  position: fixed;
+}
+
+nav ul a {
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
+  font-size: 1rem;
+  color: black;
+  display: block;
+  padding: 0 15px;
+  cursor: pointer;
+}
+
+nav .brand-logo {
+  position: absolute;
+  color: black;
+  display: inline-block;
+  font-size: 2.1rem;
+  padding: 0;
+}
+
+nav .nav-wrapper {
+  position: relative;
+  height: 100%;
+}
+
+nav ul {
+  margin: 0;
+}
+
+nav ul li {
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
+  float: left;
+  padding: 0;
+}
+
+nav ul a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
