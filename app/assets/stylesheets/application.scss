@@ -169,7 +169,7 @@ html, body {
   h1 {
     color: white;
     text-align: center;
-    padding-top: 22%;
+    padding-top: 18%;
     font-family: 'Playfair Display', serif;
     font-size: 80px;
     letter-spacing: 5px;
@@ -415,4 +415,9 @@ nav ul li {
 
 nav ul a:hover {
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+.sroll-down-arrow {
+  width: 5%;
+  height: 5%;
 }
