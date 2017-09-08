@@ -20,9 +20,7 @@
 						<li class="nav-li"><a href="#sponsors" class="smoothScroll">Sponsors</a></li>
 						<li class="nav-li"><a href="#gallery" class="smoothScroll">Gallery</a></li>
 						<% if user_signed_in? %>
-      <li class="nav-li">
-          <a href="/references">Recommendations </a>
-        </li>
+      
         <li class="nav-li">
           <a href="#">Signed in as <%= current_user.email %> </a>
         </li>
@@ -48,5 +46,6 @@
 			</div>
 		</div>
 		<%= yield %>
+		<%= render 'footer' %> 
 	</body>
 </html>
