@@ -1,5 +1,7 @@
 @import "bootstrap";
 
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
 .stylish-form {
   background-image: url("https://lut.im/cOs9CbKe42/DT8DT06CeJkRsyWC.jpg");
   padding: 10px;
@@ -150,6 +152,7 @@ input::placeholder {
 html, body {
   height: 100%;
   margin: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .full-page {

@@ -8,8 +8,8 @@
   <h1 class="center padding-top-10 padding-bottom-10">Circles</h1>
   <div class="row">
   <% @circles.each do |circle| %>
-    <div class="col-md-4 ">
-      <img src="<%= circle.image %>" alt="..." class="rounded-circle slideanim">
+    <div class="col-md-4 slideanim">
+      <img src="<%= circle.image %>" alt="..." class="rounded-circle">
       <p class="center"><%= link_to circle.name, circle %></p>
     </div>
   <% end %>
