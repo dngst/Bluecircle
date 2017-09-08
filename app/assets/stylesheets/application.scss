@@ -1,7 +1,8 @@
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+// @import url("https://fonts.googleapis.com/css?family=Playfair+Display");
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
 
 html, body {
   height: 100%;
@@ -174,7 +175,7 @@ input::placeholder {
     color: white;
     text-align: center;
     padding-top: 18%;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 80px;
     letter-spacing: 5px;
   }
@@ -296,7 +297,7 @@ nav {
     color: white;
     text-align: center;
     padding-top: 22%;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 80px;
     letter-spacing: 5px;
   }
@@ -314,7 +315,7 @@ nav {
     color: white;
     text-align: center;
     padding-top: 22%;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 80px;
     letter-spacing: 5px;
   }
@@ -332,7 +333,7 @@ nav {
     color: white;
     text-align: center;
     padding-top: 22%;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 80px;
     letter-spacing: 5px;
   }
