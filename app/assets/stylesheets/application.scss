@@ -1,6 +1,17 @@
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Condensed', sans-serif;
+}
 
 .stylish-form {
   background-image: url("https://lut.im/cOs9CbKe42/DT8DT06CeJkRsyWC.jpg");
@@ -147,13 +158,6 @@ input::placeholder {
   color: #f96332;
 }
 
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display");
-
-html, body {
-  height: 100%;
-  margin: 0;
-  font-family: 'Open Sans', sans-serif;
-}
 
 .full-page {
   height: 100vh;
@@ -316,6 +320,24 @@ nav {
   }
 }
 
+.childrens-index {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://static.pexels.com/photos/161593/baby-child-kid-girl-161593.jpeg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 85%;
+
+  h1 {
+    color: white;
+    text-align: center;
+    padding-top: 22%;
+    font-family: 'Playfair Display', serif;
+    font-size: 80px;
+    letter-spacing: 5px;
+  }
+}
+
 /************/
 /* helpers */
 /************/
@@ -387,6 +409,7 @@ nav ul a {
   display: block;
   padding: 0 15px;
   cursor: pointer;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 nav .brand-logo {
@@ -395,6 +418,7 @@ nav .brand-logo {
   display: inline-block;
   font-size: 2.1rem;
   padding: 0;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 nav .nav-wrapper {
