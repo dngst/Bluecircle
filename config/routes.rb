@@ -2,12 +2,8 @@ Rails.application.routes.draw do
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   resources :circles, only: [:index, :show]
   devise_for :users
-  get 'home/index'
-  authenticated :user do
-  	root 'users#dashboard', as: "authenticated_root" 
-
-
-  authenticated :user do
+  
+    authenticated :user do
   	root 'circles#index', as: "authenticated_root" 
 
   end
