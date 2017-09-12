@@ -1,5 +1,5 @@
-class CirclesController < ApplicationController
-  before_action :set_circle, only: [:show, :edit, :update, :destroy]
+class Admin::CirclesController < AdminController
+before_action :set_circle
 
   # GET /circles
   # GET /circles.json
@@ -71,4 +71,5 @@ class CirclesController < ApplicationController
     def circle_params
       params.require(:circle).permit(:name, :image)
     end
+
 end

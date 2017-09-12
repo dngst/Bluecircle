@@ -1,0 +1,17 @@
+<div class="childrens-index">
+  <div class="container">
+    <h1 class="animated slideInLeft">CHILDREN</h1>
+  </div>
+</div>
+<div class="container childrens-container">
+  <p id="notice"><%= notice %></p>
+  <h1 class="center padding-top-10 padding-bottom-10">Children</h1>
+  <div class="row">
+  <% @children.each do |child| %>
+    <div class="col-md-4 slideanim">
+      <img src="<%= child.image %>" alt="..." class="rounded-circle">
+      <p class="center"><% link_to child.name, child_path(child) %></p>
+    </div>
+  <% end %>
+  </div>
+</div>
