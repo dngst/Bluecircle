@@ -13,46 +13,20 @@
 
 	</head>
 	<body>
-
-		<div class="row">
-			<div class="col-12 nav">
-				<nav class="container" id="navbar">
-					<ul>
-						<li class="nav-li"><a href="#about" class="smoothScroll">About</a></li>
-						<li class="nav-li"><a href="#">Circles</a></li>
-						<li class="nav-li"><a href="#sponsors" class="smoothScroll">Sponsors</a></li>
-						<li class="nav-li"><a href="#gallery" class="smoothScroll">Gallery</a></li>
-						<% if user_signed_in? %>
-      
-        <li class="nav-li">
-          <a href="#">Signed in as <%= current_user.email %> </a>
-        </li>
-        
-         
-        <li class="nav-li">
-
-         <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
-        </li>
-
-        <% else %>
-
-        <li class="nav-li">
-          <%= link_to "Sign in", new_user_session_path %>
-        </li>
-        <li class="nav-li">
-          <%= link_to "Sign up", new_user_registration_path %>
-        </li>
-        <% end %>
-
-
 		<div class="navbar-fixed">
 			<nav id="navbar">
 				<div class="nav-wrapper container">
 					<a href="/" class="brand-logo">BC</a>
 					<ul id="nav-mobile" class="right hide-on-med-and-down">
 						<li class="nav-li"><a href="/circles">Circles</a></li>
-						<li>  <%= link_to "Children", children_path %></li>
-
+						<li> <%= link_to "Children", children_path %></li>
+						<% if user_signed_in? %>
+							<li>Signed in as <%= current_user.email %></li>
+							<li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></li>
+						<% else %>
+							<li><%= link_to "Sign in", new_user_session_path %></li>
+							<li><%= link_to "Sign up", new_user_registration_path %></li>
+						<% end %>
 					</ul>
 				</div>
 			</nav>
