@@ -210,6 +210,8 @@ input::placeholder {
   /* top element */
 }
 
+*:focus {outline:none !important}
+
 nav {
   a {
     text-decoration: none;
