@@ -287,8 +287,25 @@ nav {
     }
 }
 
-.card {
-    padding: 10%;
+#about {
+    .card {
+        padding: 10%;
+        background: linear-gradient(-135deg, rgba(0, 128, 255, 0.85) 0%, rgba(41, 72, 176, 0.85) 50%, rgba(70, 35, 122, 0.85) 100%);
+        color: white;
+
+        .card-subtitle {
+            font-weight: bolder;
+        }
+
+        .card-title {
+            font-size: 40px;
+        }
+
+        a {
+            color: white;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+    }
 }
 
 /************/
