@@ -313,7 +313,7 @@ nav {
 /************/
 
 .circles-index {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://static.pexels.com/photos/247676/pexels-photo-247676.jpeg) no-repeat center center;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://static.pexels.com/photos/161593/baby-child-kid-girl-161593.jpeg") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -379,6 +379,7 @@ nav {
 
 .center, .center-align {
     text-align: center;
+    margin: auto;
 }
 
 .left {
@@ -403,6 +404,14 @@ nav {
     img {
         width: 200px;
         height: 200px;
+    }
+    .a-black {
+        a {
+            color: #000000;
+        }
+        &:hover {
+            color: #000000;
+        }
     }
 }
 
@@ -472,4 +481,12 @@ nav ul a:hover {
 .sroll-down-arrow {
     width: 5%;
     height: 5%;
+}
+
+.circles-container img  {
+    width: 100%;
+}
+
+.btn {
+    border-radius: 0%;
 }
