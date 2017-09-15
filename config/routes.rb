@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resources :circles
+  resources :circles  do
+  	get 'join', on: :member
+  end
   devise_for :users
   resources :children
   get 'home/index'
