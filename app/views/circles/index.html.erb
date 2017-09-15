@@ -5,13 +5,20 @@
 </div>
 <div class="container circles-container">
   <p id="notice"><%= notice %></p>
-  <h1 class="center padding-top-10 padding-bottom-10">Circles</h1>
-  <div class="row">
-  <% @circles.each do |circle| %>
+  <div class="row padding-top-10 padding-bottom-10 center">
+    <% @circles.each do |circle| %>
     <div class="col-md-4 slideanim">
-      <img src="<%= circle.image %>" alt="..." class="rounded-circle">
-      <p class="center"><%= link_to circle.name, circle %></p>
+      <br><br>
+      <div class="card" style="width: 20rem;">
+        <img class="card-img-top" src="<%= circle.image %>" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title a-black "><%= link_to circle.name, circle %></h4>
+          <p class="card-text"><%= truncate(circle.description, length:90 ) %></p>
+          <%= link_to "SEE MORE" , circle, class:"btn btn-primary" %>
+          <%= link_to "Join", join_circle_path(circle), class:"btn btn-outline-primary" %>
+        </div>
+      </div>
     </div>
-  <% end %>
+    <% end %>
   </div>
 </div>
