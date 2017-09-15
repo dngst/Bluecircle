@@ -9,6 +9,8 @@
 		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 		<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 		<link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/LACMTA_Circle_Blue_Line.svg/2000px-LACMTA_Circle_Blue_Line.svg.png">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
 	</head>
 	<body>
 		<div class="navbar-fixed">
@@ -19,7 +21,8 @@
 						<li class="nav-li"><a href="/circles">Circles</a></li>
 						<% if user_signed_in? %>
 							<li><%= link_to current_user.email, profile_path(@user) %></li>
-							<li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></li>
+		 					<%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+							<li> <%= link_to "Children", children_path %></li>
 						<% else %>
 							<li><%= link_to "Sign in", new_user_session_path %></li>
 							<li><%= link_to "Sign up", new_user_registration_path %></li>

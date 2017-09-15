@@ -5,9 +5,10 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-#fileuploader
 gem 'carrierwave'
-#bootstrap
+gem 'cancancan'
+gem 'remotipart', github: 'mshibuya/remotipart'
+gem 'rails_admin', '>= 1.0.0.rc'
 gem 'bootstrap', '~> 4.0.0.beta'
 #jquery
 gem 'jquery-rails'
