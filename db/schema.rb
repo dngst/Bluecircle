@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 20170915091144) do
     t.string "siblings"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "picture"
   end
 
   create_table "circles", force: :cascade do |t|
