@@ -1,4 +1,5 @@
 class Child < ActiveRecord::Base
   has_many :users
-    validates :name, :presence => true
+  mount_uploader :picture, PictureUploader
+  validates :name, :presence => true
   end

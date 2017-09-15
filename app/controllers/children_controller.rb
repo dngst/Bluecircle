@@ -43,10 +43,9 @@ class ChildrenController < ApplicationController
     redirect_to children_path
   end
 
-
   private
   def child_params
-    params.require(:child).permit(:name, :age, :home, :school, :aspirations, :siblings)
+    params.require(:child).permit(:name, :age, :home, :school, :aspirations, :siblings, :picture)
   end
 
 end
