@@ -1,24 +1,42 @@
-# README
+# Bluecircle
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
-Things you may want to cover:
+> Rethinking how we give donations to children
 
-* Ruby version
+## Table of Contents
 
-* System dependencies
+- [Install](#install)
+- [Maintainers](#maintainers)
+- [Contribute](#contribute)
+- [License](#license)
 
-* Configuration
+## Install
 
-* Database creation
+1. Clone the repo: `$ git clone [URL]`
 
-* Database initialization
+2. Install dependencies: `$ bundle`
 
-* How to run the test suite
+3. Create the database `$ rails db:setup`
 
-* Services (job queues, cache servers, search engines, etc.)
+4. Run the app: `$ rails s`
 
-* Deployment instructions
+5. Navigate to [http://localhost:3000/](http://localhost:3000/)
 
-* ...
+Use `$ rspec` to run tests
+
+## Maintainers
+
+[@anthonyshikanga](https://github.com/anthonyshikanga)
+[@nauphrage](https://github.com/nauphrage)
+[@edwardmudaida](https://github.com/EdwardMudaida)
+
+## Contribute
+
+PRs accepted.
+
+Small note: If editing the README, please conform to the [standard-readme](https://github.com/RichardLitt/standard-readme) specification.
+
+## License
+
+MIT © 2017 anthonyshikanga
