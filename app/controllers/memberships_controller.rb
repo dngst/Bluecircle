@@ -1,17 +1,20 @@
 class MembershipsController < ApplicationController
-    def new
-      @circle = Circle.find params[:circle_id]
-      @membership = Membership.new({circle_id: @circle})
+before_filter :authenticate_user!
+  def create
+    @membership = current_user.memberships.build(:circle_id => params[:circle_id])
+    if @membership.save
+      flash[:notice] = "You have joined this group."
+      redirect_to :back
+    else
+      flash[:error] = "Unable to join."
+      redirect_to :back
     end
+  end
 
-    def create
-      @circle = Circle.find params[:circle_id]
-      @membership = Membership.new(membership_params)
-    end
-
-    private
-
-    def membership_params
-        params.require(:membership).merge(circle_id: params[:circle_id], user_id: current_user.id)
-    end
+  def destroy
+    @membership = current_user.memberships.find(params[:id])
+    @membership.destroy
+    flash[:notice] = "Removed membership."
+        redirect_to :back
+  end
 end
