@@ -5,16 +5,25 @@ class CirclesController < ApplicationController
   # GET /circles.json
   def index
     @circles = Circle.all
+    if current_user
+      @user = current_user
+    end
   end
 
   # GET /circles/1
   # GET /circles/1.json
   def show
+     if current_user
+      @user = current_user
+    end
   end
 
   # GET /circles/new
   def new
     @circle = Circle.new
+     if current_user
+      @user = current_user
+    end
   end
 
   def join
