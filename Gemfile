@@ -5,6 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 gem 'cancancan'
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 gem 'remotipart', github: 'mshibuya/remotipart'
 gem 'rails_admin', '>= 1.0.0.rc'
 gem 'bootstrap', '~> 4.0.0.beta'

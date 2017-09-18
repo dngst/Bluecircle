@@ -4,6 +4,13 @@ GIT
   specs:
     remotipart (1.3.1)
 
+GIT
+  remote: https://github.com/stripe/stripe-ruby
+  revision: 465da7a9978c17b22ebcb378b0fe72454a57b884
+  specs:
+    stripe (3.3.1)
+      faraday (~> 0.9)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -73,6 +80,8 @@ GEM
     diff-lcs (1.3)
     erubi (1.6.1)
     execjs (2.7.0)
+    faraday (0.13.1)
+      multipart-post (>= 1.2, < 3)
     ffi (1.9.18)
     font-awesome-rails (4.7.0.2)
       railties (>= 3.2, < 5.2)
@@ -118,6 +127,7 @@ GEM
     mini_portile2 (2.2.0)
     minitest (5.10.3)
     multi_json (1.12.2)
+    multipart-post (2.0.0)
     nested_form (0.3.2)
     nio4r (2.1.0)
     nokogiri (1.8.0)
@@ -259,6 +269,7 @@ DEPENDENCIES
   sass-rails (~> 5.0)
   spring
   spring-watcher-listen (~> 2.0.0)
+  stripe!
   turbolinks (~> 5)
   tzinfo-data
   uglifier (>= 1.3.0)
