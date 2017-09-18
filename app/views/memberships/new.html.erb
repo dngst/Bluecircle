@@ -1,9 +1,0 @@
-<% if user_signed_in? %>
-   <% if current_user.cirles.include?(@circle) %>
-       You're already a member of this group!
-   <% else %>
-      <%= form_for [@circle, @membership] do |f| %>
-         <%= f.submit "Join" %>
-      <% end %>
-   <% end %>
-<% end %>
