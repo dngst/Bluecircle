@@ -1,0 +1,26 @@
+<div class="jumbotron jumbotron-fglyphicon glyphicon-asteriskluid my_circle_jumbotron">
+	<div class="container">
+		<h1 class="display-3">My Circles</h1>
+		<p class="lead">Below is a list of circles you have joined &amp; contributed to.</p>
+	</div>
+</div>
+<div class="container">
+	<table class="table table-striped table-hover table-responsive">
+		<thead>
+			<tr>
+				<th></th>
+				<th>Circle</th>
+				<th>Ammount</th>
+			</tr>
+		</thead>
+		<% @circles.each do |circle| %>
+		<tbody>
+			<tr>
+				<th scope="row">+</th>
+				<td><%= circle.name %></td>
+				<td>0</td>
+			</tr>
+		</tbody>
+		<% end %>
+	</table>
+</div>

@@ -1,24 +1,40 @@
-# README
+# Bluecircle
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> Rethinking how we give donations to children
 
-Things you may want to cover:
+## Table of Contents
 
-* Ruby version
+- [Install](#install)
+- [Maintainers](#maintainers)
+- [Contribute](#contribute)
+- [License](#license)
 
-* System dependencies
+## Install
 
-* Configuration
+1. Clone the repo: `$ git clone [URL]`
 
-* Database creation
+2. Install dependencies: `$ bundle`
 
-* Database initialization
+3. Create the database `$ rails db:setup`
 
-* How to run the test suite
+4. Run the app: `$ rails s`
 
-* Services (job queues, cache servers, search engines, etc.)
+5. Navigate to [http://localhost:3000/](http://localhost:3000/)
 
-* Deployment instructions
+Use `$ rspec` to run tests
 
-* ...
+## Maintainers
+
+[@anthonyshikanga](https://github.com/anthonyshikanga)
+[@nauphrage](https://github.com/nauphrage)
+[@edwardmudaida](https://github.com/EdwardMudaida)
+
+## Contribute
+
+PRs accepted.
+
+Small note: If editing the README, please conform to the [standard-readme](https://github.com/RichardLitt/standard-readme) specification.
+
+## License
+
+MIT © 2017 Anthony shikanga

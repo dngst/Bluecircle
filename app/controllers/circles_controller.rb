@@ -1,20 +1,43 @@
 class CirclesController < ApplicationController
+  before_action :authenticate_user!, :only => [:join]
   before_action :set_circle, only: [:show, :edit, :update, :destroy]
-
   # GET /circles
   # GET /circles.json
   def index
     @circles = Circle.all
+    if current_user
+      @user = current_user
+    end
   end
 
   # GET /circles/1
   # GET /circles/1.json
   def show
+     if current_user
+      @user = current_user
+    end
   end
 
   # GET /circles/new
   def new
     @circle = Circle.new
+     if current_user
+      @user = current_user
+    end
+  end
+
+  def join
+    @circle = Circle.find(params[:id])
+    @m = @circle.memberships.build(:user_id => current_user.id)
+    respond_to do |format|
+      if @m.save
+        format.html { redirect_to(@circle, :notice => 'You have joined this group.') }
+        format.xml  { head :ok }
+      else
+        format.html { redirect_to(@circle, :notice => 'Join error.') }
+        format.xml  { render :xml => @circle.errors, :status => :unprocessable_entity }
+      end
+    end
   end
 
   # GET /circles/1/edit
@@ -62,13 +85,13 @@ class CirclesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_circle
-      @circle = Circle.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_circle
+    @circle = Circle.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def circle_params
-      params.require(:circle).permit(:name, :image)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def circle_params
+    params.require(:circle).permit(:name, :image)
+  end
 end
