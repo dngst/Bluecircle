@@ -6,13 +6,23 @@
       </div>
     <% end %>
     <label class="amount">
-      <span>Amount: $5.00</span>
+      <span>Donate: $5.00</span>
     </label>
   </article>
 
-  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-          data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-          data-description="A month's subscription"
-          data-amount="500"
-          data-locale="auto"></script>
+
 <% end %>
+
+<form action="/charges" method="POST">
+  <script
+    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+    data-key="pk_test_iIqCyt4zj6odNLkh5HI8LPUd"
+    data-amount="999"
+    data-name="Blue Crcle"
+    data-currency="kes"
+    data-description="Donate Today"
+    data-image="https://d23x084dcxncv3.cloudfront.net/skatehut/product/9cdbefd3.Birdhouse%20B%20Logo%20Skateboard%20Wheels%20-%20Blue%2051mm.jpg/750x750.fit.Birdhouse%20B%20Logo%20Skateboard%20Wheels%20-%20Blue%2051mm.jpg"
+    data-locale="auto">
+
+  </script>
+</form>
