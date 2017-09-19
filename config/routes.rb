@@ -1,7 +1,13 @@
 Rails.application.routes.draw do
+
+  resources :blogs do
+  	resources :comments
+  end
+
   resources :circles  do
     get 'join', on: :member
   end
+  
   devise_for :users
   get 'users/:id' => 'users#show', as: :profile
   resources :children
