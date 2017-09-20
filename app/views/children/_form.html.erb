@@ -1,23 +1,45 @@
-<%= render "layouts/errors", :object => @child %>
 
+
+<%= render "layouts/errors", :object => @child %>
 <%= form_for @child do |f| %>
+
+<div class="field">
 <%= f.label :name %>
 <%= f.text_field :name %>
+</div>
 
+<div class="field">
 <%= f.label :age %>
 <%= f.number_field :age %>
+</div>
 
+<div class="field">
 <%= f.label :home %>
 <%= f.text_field :home %>
+</div>
 
+<div class="field">
 <%= f.label :school %>
 <%= f.text_field :school %>
+</div>
 
+<div class="field">
 <%= f.label :aspirations %>
 <%= f.text_field :aspirations %>
+</div>
 
+<div class="field">
 <%= f.label :siblings %>
 <%= f.number_field :siblings %>
+</div>
 
+<div class="field">
+<%= f.label :picture %>
+   <%= f.file_field :picture %>
+</div>
+
+<div class="actions">
 <%= f.submit %>
+</div>
+
 <% end %>

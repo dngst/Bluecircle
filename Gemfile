@@ -4,12 +4,19 @@ git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
 end
+
 gem 'cancancan'
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 gem 'remotipart', github: 'mshibuya/remotipart'
 gem 'rails_admin', '>= 1.0.0.rc'
+
+#fileuploader
+gem 'carrierwave'
+#bootstrap
 gem 'bootstrap', '~> 4.0.0.beta'
+#jquery
 gem 'jquery-rails'
+#devise authentication
 gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.3'

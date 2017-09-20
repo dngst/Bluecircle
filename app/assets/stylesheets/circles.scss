@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Place all the styles related to the Circles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
@@ -228,3 +229,44 @@
     0% { width: 0; }
 }
 
+=======
+/************/
+/* circles */
+/************/
+// linear-gradient(-135deg, rgba(0, 128, 255, 0.85) 0%, rgba(41, 72, 176, 0.85) 50%, rgba(70, 35, 122, 0.85) 100%)
+.circles-index {
+    background: linear-gradient(-135deg, rgba(0, 128, 255, 0.85) 0%, rgba(41, 72, 176, 0.85) 50%, rgba(70, 35, 122, 0.85) 100%), url("https://static.pexels.com/photos/161593/baby-child-kid-girl-161593.jpeg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 85%;
+
+    h1 {
+        color: white;
+        text-align: center;
+        padding-top: 22%;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 80px;
+        letter-spacing: 5px;
+    }
+}
+
+.circles-show {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://static.pexels.com/photos/259269/pexels-photo-259269.jpeg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 85%;
+
+    h1 {
+        color: white;
+        text-align: center;
+        padding-top: 22%;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 80px;
+        letter-spacing: 5px;
+    }
+}
+>>>>>>> 0aa0dc5b180f7ec0d532ce3140442c4f435732b7
