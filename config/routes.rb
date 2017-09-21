@@ -4,8 +4,7 @@ Rails.application.routes.draw do
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   resources :circles, only: [:index, :show]
   resources :charges, only: [:new, :create]
-     
-root 'home#index'
+    
   
 
   resources :blogs do
@@ -22,7 +21,7 @@ root 'home#index'
     root 'circles#index', as: "authenticated_root"
   end
   resources :children
-  get 'home/index'
+  
 
  
 
