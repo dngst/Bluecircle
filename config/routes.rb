@@ -35,4 +35,4 @@ root 'home#index'
   resources :children, only:[:index, :show]
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
-end
+
