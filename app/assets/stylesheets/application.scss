@@ -1,7 +1,19 @@
 /*
+ * This is a manifest file that'll be compiled into applicatio<n.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
  *= require_tree .
  *= require_self
  */
+
 @import "bootstrap";
 
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
@@ -9,6 +21,16 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat:500");
+
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
+
+// @import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+// @import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+@import url("https://fonts.googleapis.com/css?family=Oswald:300,400,700");
+
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic");
 
 html, body {
     height: 100%;
@@ -18,10 +40,6 @@ html, body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto Condensed', sans-serif;
-}
-
-nav ul li {
-    color: #000000;
 }
 
 .stylish-form {
@@ -166,7 +184,7 @@ input::placeholder {
 
 .btn-neutral, .btn-neutral:focus, .btn-neutral:hover {
     background-color: #FFFFFF;
-    color: #000;
+    color: #f96332;
 }
 
 .full-page {
@@ -217,10 +235,6 @@ input::placeholder {
     padding-top: 2%;
 
     /* top element */
-}
-
-*:focus {
-    outline: none !important;
 }
 
 nav {
@@ -290,24 +304,58 @@ nav {
     }
 }
 
+#about_child {
+    .card {
+        padding: 10%;
+        background: linear-gradient(-135deg, rgba(0, 128, 255, 0.85) 0%, rgba(41, 72, 176, 0.85) 50%, rgba(70, 35, 122, 0.85) 100%);
+    }
+}
+
 #about {
     .card {
         padding: 10%;
         background: linear-gradient(-135deg, rgba(0, 128, 255, 0.85) 0%, rgba(41, 72, 176, 0.85) 50%, rgba(70, 35, 122, 0.85) 100%);
         color: white;
+    }
+}
 
-        .card-subtitle {
-            font-weight: bolder;
-        }
+/************/
+/* circles */
+/************/
 
-        .card-title {
-            font-size: 40px;
-        }
+.circles-index {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://static.pexels.com/photos/247676/pexels-photo-247676.jpeg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 85%;
 
-        a {
-            color: white;
-            background-color: rgba(0, 0, 0, 0.4);
-        }
+    h1 {
+        color: white;
+        text-align: center;
+        padding-top: 22%;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 80px;
+        letter-spacing: 5px;
+    }
+}
+
+.circles-show {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://static.pexels.com/photos/259269/pexels-photo-259269.jpeg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 85%;
+
+    h1 {
+        color: white;
+        text-align: center;
+        padding-top: 22%;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 80px;
+        letter-spacing: 5px;
     }
 }
 
@@ -342,7 +390,6 @@ nav {
 
 .center, .center-align {
     text-align: center;
-    margin: auto;
 }
 
 .left {
@@ -367,16 +414,6 @@ nav {
     img {
         width: 200px;
         height: 200px;
-    }
-
-    .a-black {
-        a {
-            color: #000000;
-        }
-
-        &:hover {
-            color: #000000;
-        }
     }
 }
 

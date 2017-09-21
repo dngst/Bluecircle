@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
 
+
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+  resources :circles, only: [:index, :show]
+  resources :charges, only: [:new, :create]
+
+root 'home#index'
+
+
   resources :blogs do
   	resources :comments
   end
@@ -10,18 +18,16 @@ Rails.application.routes.draw do
 
   devise_for :users
   get 'users/:id' => 'users#show', as: :profile
+  authenticated :user do
+    root 'circles#index', as: "authenticated_root"
+  end
   resources :children
   get 'home/index'
-  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-  resources :circles, only: [:index, :show]
 
-  resources :charges, only: [:new, :create]
-    authenticated :user do
-  	root 'circles#index', as: "authenticated_root"
 
-  end
 
   root 'home#index'
+
   # namespace :admin do
   # 	resources :circles
   # 	resources :children, only:[:new, :edit, :show,:index]

@@ -127,8 +127,8 @@
                 </div><!-- card content -->
                 <!-- card actions -->
                 <div class="card-reveal">
-                    <span class="card-title">Child Status</span> <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                    <p>Anita is currently studying for her end of year examinations.</p>
+                    <span class="card-title"><strong>Child Status</strong></span> <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <p>This is the status field for this child. It is maintained and updated frequently by the matron incharge at the child's respective home. Come here to see how the child is fairing on</p>
                 </div><!-- card reveal -->
                 <div class="container">
     <div class="row">
@@ -138,19 +138,40 @@
                     <div class="progress-value"></div>
                 </div>
                 </div>
-            <h2>Amount raised: KES 24000</h2>
+                <h2>Amount raised:</h2>
+                <h2><KBD>KES 24000</KBD></h2>
+          
             <h2>Members: 54</h2>
-            <h2>Monthly pledge: KES 200</h2>
+            <h2>Monthly pledge:<BR><kbd>KES 200</kbd></h2>
             
             
         </div>
+
     </div>
 </div>
             </div>
         </div>
     </div>
-</div>
+    <br>
+    <button type="button" class="btn btn-success btn-lg btn-block">Join Circle</button>
+    <form action="/charges" method="POST">
+  <script
+    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+    data-key="pk_test_iIqCyt4zj6odNLkh5HI8LPUd"
+    data-amount="20000"
+    data-name="Blue Circle"
+    data-currency="kes"
+    data-description="Donate Today"
+    data-image="https://thumbs.dreamstime.com/z/
+    vector-abstract-blue-circle-banner-logo-design-template-flyer-48112491.jpg"
+    data-panel-label="Donate"
+    data-label="Donate to savings account"
+    data-locale="auto">
 
+  </script>
+</form>
+</div>
+<div></div>
          <!-- <img src="https://s-media-cache-ak0.pinimg.com/736x/d8/e8/e3/d8e8e3d49a05419820e1efcce5543ce5--beautiful-green-eyes-pretty-eyes.jpg" alt="Smiley face"> --> 
       </div>
     </row>
