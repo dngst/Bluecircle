@@ -20,9 +20,7 @@ Rails.application.routes.draw do
   authenticated :user do
     root 'circles#index', as: "authenticated_root"
   end
-  resources :children
   
-
  
 
   root 'home#index'
@@ -32,6 +30,6 @@ Rails.application.routes.draw do
   # 	resources :children, only:[:new, :edit, :show,:index]
   # end
   resources :children, only:[:index, :show]
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-end
+  # For details onlyn the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
 
