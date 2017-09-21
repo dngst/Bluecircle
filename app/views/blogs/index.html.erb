@@ -1,31 +1,25 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Blogs</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Body</th>
-      <th>Image url</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
+<div class="blog-cards-container">
+<div class="jumbotron jumbotron-fglyphicon glyphicon-asteriskluid blog-header">
+  <div class="container">
+    <h2 class="display-3 center">Bluecircle Blog</h2>
+    <p class="lead center">Testimonies ment to inspire.</p>
+  </div>
+</div>
+  <div class="container padding-top-5">
     <% @blogs.each do |blog| %>
-      <tr>
-        <td><%= blog.title %></td>
-        <td><%= blog.body %></td>
-        <td><%= blog.image_url %></td>
-        <td><%= link_to 'Show', blog %></td>
-        <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
-        <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+    <div class="blog-card">
+      <div class="photo photo1"></div>
+      <ul class="details">
+        <li class="author"><a href="#">John Doe</a></li>
+        <li class="date"><%= blog.created_at.strftime('%A, %B %d') %></li>
+      </ul>
+      <div class="description">
+        <h3><%= blog.title %></h3>
+        <h2>Opening a door to the future</h2>
+        <p class="summary"><%= truncate(blog.body, length:200) %></p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
     <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Blog', new_blog_path %>
+  </div>
+</div>
