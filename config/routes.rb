@@ -21,8 +21,6 @@ Rails.application.routes.draw do
     root 'circles#index', as: "authenticated_root"
   end
   
- 
-
   root 'home#index'
 
   # namespace :admin do
@@ -32,4 +30,4 @@ Rails.application.routes.draw do
   resources :children, only:[:index, :show]
   # For details onlyn the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
-
+end
