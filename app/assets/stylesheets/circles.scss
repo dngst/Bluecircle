@@ -53,7 +53,7 @@
   height : 100%;
   background-color: white;
 }
-@media (max-width: 1200px) { 
+@media (max-width: 1200px) {
   .left{
     height:50%
   }
@@ -111,7 +111,7 @@
 
 .card{
 
-    font-family: 'Roboto', sans-serif; 
+    font-family: 'Roboto', sans-serif;
     margin-top: 10px;
     position: relative;
     -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
@@ -120,12 +120,12 @@
 }
 
 .card .card-content {
-    padding: 10px;    
+    padding: 10px;
 }
 
 .card .card-content .card-title, .card-reveal .card-title{
     font-size: 24px;
-    font-weight: 200;    
+    font-weight: 200;
 }
 
 .card .card-action{
@@ -136,19 +136,19 @@
     font-size: 15px;
     color: #ffab40;
     text-transform:uppercase;
-    margin-right: 20px;    
+    margin-right: 20px;
     -webkit-transition: color 0.3s ease;
     -moz-transition: color 0.3s ease;
     -o-transition: color 0.3s ease;
     -ms-transition: color 0.3s ease;
     transition: color 0.3s ease;
 }
-.card .card-action a:hover{    
+.card .card-action a:hover{
     color:#ffd8a6;
     text-decoration:none;
 }
 
-.card .card-reveal{    
+.card .card-reveal{
     padding: 10px;
     position: absolute;
     background-color: #FFF;
@@ -159,7 +159,7 @@
     bottom:0;
     height: 100%;
     z-index: 1;
-    display: none;    
+    display: none;
 }
 
 .card .card-reveal p{
@@ -267,3 +267,4 @@
         font-size: 80px;
         letter-spacing: 5px;
     }
+}
