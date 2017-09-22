@@ -1,5 +1,5 @@
 
-Circle.create(name:"Alex Waweru", image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToB4SDieIgPxIwZEr5CRnQwct5Fj_Dx_7nN0SDPnc--1Uxvlwo", description:"Alex loves sharks.")
+Circle.create(name:"Alex Waweru", image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToB4SDieIgPxIwZEr5CRnQwct5Fj_Dx_7nN0SDPnc--1Uxvlwo", description:"Some quick example text to build on the card title and make up the bulk of the card's content.")
 
 Circle.create(name:"James Muthee", image:"https://s1.favim.com/610/150929/african-child-cute-greek-quotes-Favim.com-3375620.jpg", description:"Some quick example text to build on the card title and make up the bulk of the card's content.")
 
