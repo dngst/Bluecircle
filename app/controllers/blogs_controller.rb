@@ -5,11 +5,17 @@ class BlogsController < ApplicationController
   # GET /blogs.json
   def index
     @blogs = Blog.all
+    if current_user
+      @user = current_user
+    end
   end
 
   # GET /blogs/1
   # GET /blogs/1.json
   def show
+    if current_user
+      @user = current_user
+    end
   end
 
   # GET /blogs/new
@@ -62,13 +68,13 @@ class BlogsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_blog
-      @blog = Blog.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_blog
+    @blog = Blog.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def blog_params
-      params.require(:blog).permit(:title, :body, :image_url)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def blog_params
+    params.require(:blog).permit(:title, :body, :image_url)
+  end
 end
