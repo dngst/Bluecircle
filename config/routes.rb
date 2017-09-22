@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
 
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-  resources :circles, only: [:index, :show]
+  resources :circles, only: [:index, :show, :edit]
   resources :charges, only: [:new, :create]
 
 root 'home#index'

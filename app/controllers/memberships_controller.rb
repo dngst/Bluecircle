@@ -1,5 +1,5 @@
 class MembershipsController < ApplicationController
-before_filter :authenticate_user!
+before_action :authenticate_user!
   def create
     @membership = current_user.memberships.build(:circle_id => params[:circle_id])
     if @membership.save

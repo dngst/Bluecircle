@@ -6,7 +6,7 @@ class BlogsController < ApplicationController
   def index
     @blogs = Blog.all
     if current_user
-      @user = current_user
+      @user = current_user.id
     end
   end
 
@@ -14,13 +14,16 @@ class BlogsController < ApplicationController
   # GET /blogs/1.json
   def show
     if current_user
-      @user = current_user
+      @user = current_user.id
     end
   end
 
   # GET /blogs/new
   def new
     @blog = Blog.new
+    if current_user
+      @user = current_user.id
+    end
   end
 
   # GET /blogs/1/edit
