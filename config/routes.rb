@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
 
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-  resources :circles, only: [:index, :show]
+  resources :circles, only: [:index, :show, :edit]
   resources :charges, only: [:new, :create]
     
   
@@ -31,3 +31,4 @@ Rails.application.routes.draw do
   # For details onlyn the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
 end
+
