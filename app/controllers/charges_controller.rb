@@ -5,7 +5,8 @@ class ChargesController < ApplicationController
 
  def create
   # Amount in cents
-  @amount = 20000
+@circle = Circle.find(params[:id])
+  @amount = @circle.pledge * 100
 
 
   customer = Stripe::Customer.create(
